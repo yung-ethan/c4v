@@ -8,18 +8,18 @@ To accomplish this, we created a Python data cleaning script, and a Tableau dash
 ## Data Quality Issues
 As the initial analysis on the dataset showed, C4V can improve the quality of its information, by doing some changes in the google form.
 
-Question number 4: "Ente Administrativo"
+Question #4: "Ente Administrativo"
 There is only five options allowed multiple selections. The suggestion is to have all the possible regions as fields, as
 they already exists in Question 2.
 
-Question number 48: Power Outage Number by Day
+Question #48: "Power Outage Number by Day"
 In the survey, manual input for number. The suggestion is to have a single selection field rather than a multiple selection field 
 Allowed answers: Yes | No | No, Yes
 
-Question number 49: Power Outage Number by Day
+Question #49: "Power Outage Number by Day"
 In the survey, manual input for number. The suggestion is to have a drop drown list rather than a typed field
 
-Question number 53: Equipment Names
+Question #53: "Equipment Names"
 In the survey, manual input for equipments' names. The suggestion is to have a drop drown list rather than a typed field
 
 ## Data cleaning script operations:
