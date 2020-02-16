@@ -22,7 +22,12 @@ In the survey, manual input for number. The suggestion is to have a drop drown l
 Question #53: "Equipment Names"
 In the survey, manual input for equipments' names. The suggestion is to have a drop drown list rather than a typed field
 
-## Data cleaning script operations:
+## Data cleaning script
+Run data cleaning by executing the Python script:
+`python clean_survey_data.py`
+This outputs the file "cleaned_survey_dataset.csv".
+
+Cleaning operations:
 - Created an extra string column with the report week, formatted as "[Year]-[Week of Year]". This allows for sorting the data in report week order.
 - De-duplicated the reports by only using the latest submitted report by hospital and week.
 - Created a corresponding numeric (ordinal) column for each of the medicine supply fields. Also calculate an aggregated rating of medical supplies.
