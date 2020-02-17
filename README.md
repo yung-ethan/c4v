@@ -1,9 +1,9 @@
-# Los Mesoneros -- Hospital Status Dashboard for NGOs
+# Hospital Vital Indicators Dashboard for NGOs
 
 ## Background
 Our objective was to produce a dashboard that enables NGOs to easily look up the status and needs of hospitals in Venezuela. This helps NGOs decide what hospitals to target, and what their greatest needs are. The dashboard gives a high-level overview of hospital status across a few key categories: medical supplies, operability, water, power, and nutritional availability.
 
-To accomplish this, we created a Python data cleaning script, and a Tableau dashboard. We created a Python script that cleans and prepares the DFH survey data for use in Tableau. It produces a CSV file called "cleaned_survey_dataset.csv" to be imported to Tableau. Also, the team created a lookup table file with all the information about the hospitals, by code and state.
+To accomplish this, we created a Python data cleaning script, and a Tableau dashboard. The Python script cleans and prepares the DFH survey data, and outputs a CSV file for use in Tableau. Also, we created lookup table file with all the information about the hospitals, by code and state.
 
 ## Data Quality Issues
 As the initial analysis on the dataset showed, C4V can improve the quality of its information, by doing some changes in the google form.
@@ -31,4 +31,4 @@ Cleaning operations:
 - Created an extra string column with the report week, formatted as "[Year]-[Week of Year]". This allows for sorting the data in report week order.
 - De-duplicated the reports by only using the latest submitted report by hospital and week.
 - Created a corresponding numeric (ordinal) column for each of the medicine supply fields. Also calculate an aggregated rating of medical supplies.
-- Similarly, created a corresponding numeric column for each of the operability fields.
+  - Similarly, created a corresponding numeric column for each of the operability fields.
