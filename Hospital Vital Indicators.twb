@@ -6,6 +6,7 @@
     <AutoCreateAndUpdateDSDPhoneLayouts ignorable='true' predowngraded='true' />
     <CascadingFilters />
     <MapboxVectorStylesAndLayers />
+    <NavigationAction />
     <SheetIdentifierTracking ignorable='true' predowngraded='true' />
     <SortTagCleanup />
     <WindowsPersistSimpleIdentifiers />
@@ -2912,7 +2913,7 @@
           <field>[federal_entity]</field>
         </drill-path>
       </drill-paths>
-      <layout dim-ordering='alphabetic' dim-percentage='0.553542' measure-ordering='alphabetic' measure-percentage='0.446458' show-aliased-fields='true' show-structure='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.552147' measure-ordering='alphabetic' measure-percentage='0.447853' show-aliased-fields='true' show-structure='true' />
       <style>
         <style-rule element='mark'>
           <encoding attr='color' field='[:Measure Names]' type='palette'>
@@ -3086,6 +3087,20 @@
         <param name='target' value='Report per week' />
       </command>
     </action>
+    <nav-action caption='Ir a la hoja1' name='[Action6]'>
+      <activation type='on-select' />
+      <source dashboard='Landing Page' type='sheet' worksheet='KPI - Meds' />
+      <params>
+        <param name='sheet' value='Meds' />
+      </params>
+    </nav-action>
+    <nav-action caption='Ir a la hoja2' name='[Action7]'>
+      <activation type='on-select' />
+      <source dashboard='Landing Page' type='sheet' worksheet='KPI - Operability' />
+      <params>
+        <param name='sheet' value='Operability' />
+      </params>
+    </nav-action>
   </actions>
   <worksheets>
     <worksheet name='Apply button'>
@@ -4935,8 +4950,8 @@
           </layout-options>
           <size maxheight='1700' minheight='1700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='110' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='111' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='114' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='115' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
                 <zone h='5125' id='43' type='title' w='98400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -5157,8 +5172,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='69' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='70' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='73' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='74' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
                 <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Meds - supplies' w='82400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -5320,8 +5335,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='87' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='88' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='91' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='92' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
                 <zone fixed-size='280' h='98000' id='31' is-fixed='true' name='Operability - measures ' w='82400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -5479,8 +5494,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='57' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='58' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='61' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='62' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
                 <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Number of Reports' w='82400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -5550,7 +5565,7 @@
       <simple-id uuid='{A6B7BF4B-8DC7-443F-BC47-EA3C5E91FCB0}' />
     </dashboard>
   </dashboards>
-  <windows source-height='93'>
+  <windows source-height='48'>
     <window class='worksheet' name='Apply button'>
       <cards>
         <edge name='left'>
@@ -6097,6 +6112,24 @@
         <viewpoint name='Apply button' />
         <viewpoint name='KPI - Meds'>
           <zoom type='entire-view' />
+          <selection-collection>
+            <tuple-selection>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields />
+                    <y-fields />
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0pc32sa1yljyge11p73xw0ialhh6].[avg:medical_supply_summary:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>1.7563035111146024</value>
+                </tuple>
+              </tuple-reference>
+            </tuple-selection>
+          </selection-collection>
         </viewpoint>
         <viewpoint name='KPI - Nutrition'>
           <zoom type='entire-view' />
@@ -6129,7 +6162,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='3' />
+      <active id='-1' />
       <simple-id uuid='{B4EB5003-3495-4A42-8F9D-9D5C6E5B984F}' />
     </window>
     <window class='dashboard' name='Operability'>
