@@ -1,6 +1,11 @@
 # Hospital Vital Indicators Dashboard for NGOs
 
+![Dashboard landing page](Hospital%20Vital%20Indicators%20landing%20page.png)
+
 ## Background
+This was our project for Code For Venezuela's SF hackathon!
+https://devpost.com/software/los-mesoneros/
+
 Our objective was to produce a dashboard that enables NGOs to easily look up the status and needs of hospitals in Venezuela. This helps NGOs decide what hospitals to target, and what their greatest needs are. The dashboard gives a high-level overview of hospital status across a few key categories: medical supplies, operability, water, power, and nutritional availability.
 
 To accomplish this, we created a Python data cleaning script, and a Tableau dashboard. The Python script cleans and prepares the DFH survey data, and outputs a CSV file for use in Tableau. Also, we created lookup table file with all the information about the hospitals, by code and state.
